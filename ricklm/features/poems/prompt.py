@@ -1,11 +1,24 @@
 from __future__ import annotations
 
 from pathlib import Path
-import toml
 
 import attrs
 
 __all__ = ["Prompt"]
+
+
+def load_toml(file: Path) -> dict:
+    try:
+        import tomllib
+    except ModuleNotFoundError:
+        import toml
+
+        with open(file, "r", encoding="utf-8") as f:
+            return toml.load(f)
+
+    with open(file, "rb") as f:
+        return tomllib.load(f)
+
 
 @attrs.frozen(kw_only=True)
 class Prompt:
@@ -21,8 +34,7 @@ class Prompt:
         where `general.style` and `general.context` exist and
         `[[poems]]` entries may contain `sample` strings.
         """
-        with open(file, "r", encoding="utf-8") as f:
-            data = toml.load(f)
+        data = load_toml(file)
 
         general = data.get("general", {})
         style = general.get("style", "")

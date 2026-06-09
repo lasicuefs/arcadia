@@ -50,19 +50,61 @@ For instance, the code above is too error prone, since I can type anything:
 pipeline("text-generator", "owner/ai-model-7b-instruct")
 ```
 
-But using a DSL I have a code/type oriented interface that minimizes those errors:
+But using a model API I have a code/type oriented interface that minimizes those errors:
 
 ```python
-model = AmadeusVerbo(size="7B") # 7B is a Literal with fixed options
-poem = Poem(by=model, style="Gregório de Matos")
-...
+from ricklm import models
+
+model = models.AmadeusVerbo("3B")
+```
+
+Ask returns the model answer as normalized UTF-8 text. It is a `str`, so printing or writing it to disk does not expose JSON or Python objects:
+
+```python
+from ricklm import models
+
+model = models.AmadeusVerbo("3B")
+
+with model as m:
+    output = m.ask("Meu prompt")
+    print(output)
+```
+
+For an interactive chat, type `sair`, `exit`, or `quit` to finish. Each message is also a `str`:
+
+```python
+with model as m:
+    for output in m.chat():
+        print(output)
+```
+
+`chat()` renders each message naturally:
+
+```text
+Usuário:
+
+Meu prompt
+
+Amadeus-Verbo-FI-Qwen2.5-3B-PT-BR-Instruct:
+
+Resposta do modelo
+```
+
+For scripted prompts, `chat()` behaves like a lazy history. `history[-1]` renders only the last user/model turn, and `history[-1].ai` or `history.last.ai` returns only the model answer:
+
+```python
+with model as m:
+    history = m.chat(["Meu prompt"])
+    print(history[-1])
+    print(history[-1].ai)
+    print(history.last.ai)
 ```
 
 ### Steps
 
 1. Install `ricklm`
 2. Choose a model families and its size.
-3. Run some task, like poem generation via `Poem`
+3. Run `ask()` or `chat()`.
 4. Upload back to Github if you wish
 5. Clean the runtime for reuse
 
