@@ -4,8 +4,59 @@ This repository aims to quickly test some AI models using Collab.
 
 ## How to use it
 
-On [play.ipynb](play.ipynb) click on "Open in Collab",
+On [play.ipynb](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/play.ipynb) click on "Open in Collab",
 modify as you need and have fun!
+
+### Google Colab
+
+Use a GPU runtime before loading a model: `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
+
+To test any branch or tag in Colab, set `GIT_REF` to the branch or tag name you want. For example: `"main"`, `"api-v2"`, `"v1.0.0"`.
+
+```python
+GIT_REF = "api-v2"  # branch or tag
+
+!rm -rf /content/llm-playground
+!git clone https://github.com/RickBarretto/llm-playground /content/llm-playground
+%cd /content/llm-playground
+!git fetch --all --tags
+!git checkout $GIT_REF
+!pip install -U /content/llm-playground
+```
+
+Minimal `ask()` test:
+
+```python
+from pathlib import Path
+from ricklm import models
+
+model = models.AmadeusVerbo("3B")
+
+with model as m:
+    output = m.ask("Escreva uma frase curta sobre o Brasil.")
+    print(output)
+    Path("/content/ask.txt").write_text(output, encoding="utf-8")
+```
+
+Minimal `chat()` test:
+
+```python
+from pathlib import Path
+from ricklm import models
+
+model = models.AmadeusVerbo("3B")
+
+with model as m:
+    history = m.chat([
+        "Escreva uma frase sobre o Brasil.",
+        "Agora transforme essa frase em um verso.",
+    ])
+
+    print(history[-1])
+    print(history[-1].ai)
+    print(history.last.ai)
+    Path("/content/chat-last.txt").write_text(history[-1], encoding="utf-8")
+```
 
 ### Prompts
 
