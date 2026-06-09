@@ -1,11 +1,11 @@
-from typing import Literal, ClassVar
+from typing import Any, Literal, ClassVar
 
 import attrs
 
-from ricklm.shared.models.capabilities import GeneratesText, normalize
+from ricklm.shared.models.capabilities import GeneratesText, TextOutput, normalize
 
 
-__all__ = ["AmadeusVerbo"]
+__all__ = ["AmadeusVerbo", "Gaia", "Tucano", "TeenyTinyLlama"]
 
 
 @attrs.frozen
@@ -17,6 +17,7 @@ class AmadeusVerbo(GeneratesText):
     @property
     def model(self) -> str:
         return self._model.format(size=self.size)
+
 
 @attrs.frozen
 class Gaia(GeneratesText):
@@ -62,8 +63,26 @@ class TeenyTinyLlama(GeneratesText):
     def model(self) -> str:
         return self._model.format(size=self.size)
     
-    def text(self, prompt: str) -> str:
-        pipe = self.pipeline("text-generation")
+    def ask(
+        self,
+        prompt: str,
+        *,
+        remember: bool = False,
+        max_new_tokens: int = 512,
+        do_sample: bool = True,
+        temperature: float = 0.7,
+        **kwargs: Any,
+    ) -> TextOutput:
+        if self._pipe is None:
+            raise RuntimeError("Pipeline not initialized. Use 'with' statement to initialize the model.")
+
         instruction = f"<instruction>{prompt}</instruction>"
-        response = pipe(instruction, max_new_tokens=512, do_sample=True, temperature=0.7) # type: ignore
-        return normalize(response[0]["generated_text"].replace(instruction, "", 1)) # type: ignore
+        response = self._pipe(
+            instruction,
+            max_new_tokens=max_new_tokens,
+            do_sample=do_sample,
+            temperature=temperature,
+            **kwargs,
+        )
+        output = normalize(response[0]["generated_text"].replace(instruction, "", 1)) # type: ignore
+        return TextOutput(output)
