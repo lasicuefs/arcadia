@@ -62,6 +62,26 @@ class ChatTurn(str):
 
     def __repr__(self) -> str:
         return str(self)
+    
+    @property
+    def llm(self) -> str:
+        return self.ai
+    
+    @property
+    def assistant(self) -> str:
+        return self.ai
+    
+    @property
+    def system(self) -> str:
+        return self.ai
+
+    @property
+    def human(self) -> str:
+        return self.user
+    
+    @property
+    def me(self) -> str:
+        return self.user
 
 
 @attrs.define
