@@ -7,5 +7,5 @@
     - [ ] Description
     - [ ] Author
     - [ ] Maintainer
-- [ ] Properly document the API for future maintainance
-- [ ] Document the steps to include new models
+- [x] Properly document the API for future maintainance
+- [x] Document the steps to include new models

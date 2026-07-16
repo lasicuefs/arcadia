@@ -73,6 +73,12 @@ with model as m:
 
 For an interactive chat, use `sair`, `exit`, or `quit` to finish.
 
+## API Reference
+
+See [docs/API.md](docs/API.md) for the public model API, lifecycle rules, output objects, and chat history behavior.
+
+To add another model wrapper, follow [docs/ADDING_MODELS.md](docs/ADDING_MODELS.md).
+
 ## Prompts And Templates
 
 Prompts and templates should live outside this repository, next to the generated outputs they produce.
