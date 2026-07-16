@@ -1,12 +1,32 @@
-# Arcadia
+<p align="right">
+<a href="README.md">Read in English</a>
+</p>
 
-> Paisagem natural idealizada e intocada. [^1]
+<div align="center">
 
-Este repositório existe para instalar e executar modelos de IA rapidamente, principalmente no Google Colab.
+# ✦ Arcadia ✦
 
-Ele versiona apenas o código de execução, o notebook e a documentação do fluxo de trabalho em tempo de execução. Prompts, modelos de prompt e saídas geradas por modelos não devem ser versionados aqui.
+**Uma API de pesquisa para experimentação com modelos de linguagem no LASIC**
 
-## Como Usar
+`LLMs` · `Geração de Poesia` · `Avaliação de Prompts` · `Research Playground`
+</div>
+
+<p align="center">
+🙡 ———————————————————————— 🙡
+</p>
+
+## 🌿 Visão Geral 🌿
+
+**Arcadia** é um wrapper mínimo para carregar modelos de linguagem amigáveis a PT-BR sem precisar digitar repetidamente nomes de modelos, versões de pacotes e detalhes de configuração do runtime.
+
+O nome aponta para Arcadia como uma paisagem imaginada de harmonia, natureza e reflexão. Para este ambiente de pesquisa, ele sugere um espaço de linguagem, experimentação e exploração criativa com LLMs.
+
+Este repositório existe para instalar e executar modelos de IA rapidamente, principalmente — mas não limitado a — Google Colab, Kaggle ou localmente.
+
+
+<p align="center">🙡 ✦ 🙡</p>
+
+## 🧭 Como Usar 🧭
 
 Abra [`executar.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
 
@@ -23,20 +43,9 @@ GIT_REF = "main"  # branch ou tag
 !pip install -U /content/llm-playground
 ```
 
-## Onde Salvar Saídas
+<p align="center">🙡 ✦ 🙡</p>
 
-Use um diretório fora deste repositório para prompts, modelos de prompt, respostas, poemas, avaliações e outros documentos gerados. Idealmente, salve suas saídas para um repositório separado dentro de um cofre (Vault) do Obsidian.
-
-Exemplo no Colab:
-
-```python
-from pathlib import Path
-
-OUTPUT_DIR = Path("/content/outputs")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-```
-
-## Execução Mínima
+## 🪶 Execução Mínima 🪶
 
 ```python
 from pathlib import Path
@@ -53,7 +62,9 @@ with model as m:
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
 
-## Chat
+<p align="center">🙡 ✦ 🙡</p>
+
+## 📜 Chat 📜
 
 ```python
 from arcadia import models
@@ -73,27 +84,38 @@ with model as m:
 
 Para um chat interativo, use `sair` para finalizar.
 
-## Referência Da API
+<p align="center">🙡 ✦ 🙡</p>
+
+## 📦 Artefatos De Saída 📦
+
+Use um diretório fora deste repositório para prompts, modelos de prompt, respostas, poemas, avaliações e outros documentos gerados.
+
+Exemplo no Colab:
+
+```python
+from pathlib import Path
+
+OUTPUT_DIR = Path("/content/outputs")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+```
+
+Não versione estes artefatos neste repositório:
+
+- prompts e modelos de prompt;
+- poemas gerados;
+- respostas brutas de modelos;
+- avaliações produzidas por modelos juízes;
+- documentos derivados de saídas de modelos.
+
+Observe que as releases `s*` utilizam versionamento baseado em dados. Elas são mantidas apenas para preservar o histórico, mas estão descontinuadas.
+
+<p align="center">🙡 ✦ 🙡</p>
+
+## 🔌 API 🔌
 
 Consulte [docs/API.md](docs/API.md) para a API pública dos modelos, as regras de ciclo de vida, os objetos de saída e o comportamento do histórico de chat.
 
 Para adicionar outro wrapper de modelo, siga [docs/ADDING_MODELS.md](docs/ADDING_MODELS.md).
-
-## Prompts E Modelos De Prompt
-
-Prompts e modelos de prompt devem ficar fora deste repositório, junto das saídas geradas por eles.
-
-O layout preferido é um repositório separado dentro de um cofre do Obsidian. Mantenha o prompt, a resposta gerada, a avaliação e os documentos derivados juntos nesse local, para que o histórico acompanhe o experimento em vez do código de execução.
-
-## Arcadia Do LASIC
-
-`arcadia` é um wrapper mínimo para carregar alguns modelos amigáveis a PT-BR sem precisar digitar manualmente nomes de modelos e versões de pacotes repetidamente.
-
-```python
-from arcadia import models
-
-model = models.AmadeusVerbo("3B")
-```
 
 `ask()` retorna a resposta do modelo como texto UTF-8 normalizado:
 
@@ -113,25 +135,11 @@ with model as m:
     print(history.last.ai)
 ```
 
-## Versionamento
+<div align="center">
 
-Este repositório versiona apenas o ambiente de execução:
+**Arcadia**<br>
+*Um portal poético para explorar modelos de linguagem dentro do LASIC.*
 
-- o código do pacote `arcadia`;
-- o notebook de execução;
-- a documentação do fluxo de trabalho de execução.
+</div>
 
-Não versione estes artefatos neste repositório:
-
-- prompts e modelos de prompt;
-- poemas gerados;
-- respostas brutas de modelos;
-- avaliações produzidas por modelos juízes;
-- documentos derivados de saídas de modelos.
-
-Esses artefatos dependem do prompt, do modelo e das configurações de execução, não apenas do código. Eles devem ficar em um repositório separado, preferencialmente dentro de um cofre do Obsidian.
-
-Observe que as releases `s*` utilizam versionamento baseado em dados. Elas são mantidas apenas para preservar o histórico, mas estão descontinuadas.
-
-
-[^1]: https://poemanalysis.com/definition/arcadia/
+<p align="center">🙡 ✦ 🙡</p>
