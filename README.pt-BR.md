@@ -24,8 +24,6 @@ O nome aponta para Arcadia como uma paisagem imaginada de harmonia, natureza e r
 Este repositório existe para instalar e executar modelos de IA rapidamente, principalmente — mas não limitado a — Google Colab, Kaggle ou localmente.
 
 
-<p align="center">🙡 ✦ 🙡</p>
-
 ## Como Usar
 
 Abra [`executar.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
@@ -44,7 +42,6 @@ GIT_REF = "main"  # branch ou tag
 ```
 
 
-
 ## Execução Mínima
 
 ```python
@@ -61,7 +58,6 @@ with model as m:
     print(output)
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
-
 
 
 ## Chat
@@ -83,7 +79,6 @@ with model as m:
 ```
 
 Para um chat interativo, use `sair` para finalizar.
-
 
 
 ## Artefatos De Saída
@@ -108,7 +103,6 @@ Não versione estes artefatos neste repositório:
 - documentos derivados de saídas de modelos.
 
 Observe que as releases `s*` utilizam versionamento baseado em dados. Elas são mantidas apenas para preservar o histórico, mas estão descontinuadas.
-
 
 
 ## API
