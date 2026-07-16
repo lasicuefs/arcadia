@@ -23,7 +23,7 @@ This repository exists to install and run AI models quickly, mainly — but not 
 
 The name points to Arcadia as an imagined landscape of harmony, nature, and reflection. For this research playground, it suggests a space for language, experimentation, and creative exploration with LLMs.
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">How To Use</h2>
 
@@ -42,7 +42,7 @@ GIT_REF = "main"  # branch or tag
 !pip install -U /content/llm-playground
 ```
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Minimal Run</h2>
 
@@ -61,7 +61,7 @@ with model as m:
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Chat</h2>
 
@@ -83,7 +83,7 @@ with model as m:
 
 For an interactive chat, use `exit`, or `quit` to finish.
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Output Artifacts</h2>
 
@@ -108,7 +108,7 @@ Do not version these artifacts in this repository:
 
 Notice that the `s*` releases use data-based versioning. They are retained solely for historical purposes and are now deprecated.
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">API</h2>
 

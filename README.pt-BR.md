@@ -43,7 +43,7 @@ GIT_REF = "main"  # branch ou tag
 !pip install -U /content/llm-playground
 ```
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Execução Mínima</h2>
 
@@ -62,7 +62,7 @@ with model as m:
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Chat</h2>
 
@@ -84,7 +84,7 @@ with model as m:
 
 Para um chat interativo, use `sair` para finalizar.
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">Artefatos De Saída</h2>
 
@@ -109,7 +109,7 @@ Não versione estes artefatos neste repositório:
 
 Observe que as releases `s*` utilizam versionamento baseado em dados. Elas são mantidas apenas para preservar o histórico, mas estão descontinuadas.
 
-<p align="center">🙡 ✦ 🙡</p>
+
 
 <h2 align="center">API</h2>
 
