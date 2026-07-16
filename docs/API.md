@@ -6,6 +6,8 @@ Arcadia exposes its user-facing API through `arcadia.models`.
 from arcadia import models
 ```
 
+Supported model wrappers live in separate modules under `arcadia.models` and are re-exported from `arcadia.models` for user code. The `arcadia.models.api` package contains internal base classes and runtime helpers.
+
 ## Model Classes
 
 Each model class is an immutable configuration object. Instantiate it with an optional `size`, then use it as a context manager before generating text.
@@ -116,4 +118,4 @@ print(history.last.ai)
 
 Arcadia normalizes generated text to NFC Unicode and converts escaped `\n` and `\t` sequences into real newline and tab characters before returning output objects.
 
-The helper functions are internal implementation details unless a future feature explicitly promotes them to the public API.
+The helper functions and classes under `arcadia.models.api` are internal implementation details unless a future feature explicitly promotes them to the public API.

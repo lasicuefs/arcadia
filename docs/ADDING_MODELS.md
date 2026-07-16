@@ -4,21 +4,22 @@ Use this checklist when adding a new Hugging Face model wrapper to Arcadia.
 
 ## 1. Choose The Capability Base
 
-Text-generation chat models should inherit from `GeneratesText` in `arcadia.shared.models.capabilities`.
+Text-generation chat models should inherit from `GeneratesText` in `arcadia.models.api.decoder`.
 
 ```python
-from arcadia.shared.models.capabilities import GeneratesText
+from arcadia.models.api.decoder import GeneratesText
 ```
 
 Add a different capability base only when the model needs a different pipeline task or return shape.
 
 ## 2. Add The Model Class
 
-Add the class to `arcadia/features/models/__init__.py`.
+Add the class to a dedicated file under `arcadia/models/`, for example `arcadia/models/new_model.py`.
+Keep reusable runtime behavior in `arcadia/models/api/`; model files should only describe Hugging Face ownership, repository-name formatting, and any model-specific prompt or output handling.
 
 ### Minimal way
 
-This is encouraged if your model doesn't support variations, like size, quantitization, etc.
+Use this when your model does not support variations like size or quantization.
 
 
 ```python
@@ -30,7 +31,7 @@ import attrs
 @attrs.frozen
 class NewModel(GeneratesText):
     owner: ClassVar[str] = "huggingface-owner"
-    model: ClassVar[str] = "Model-Name"
+    _model: ClassVar[str] = "Model-Name"
 ```
 
 ### With size variation
@@ -60,9 +61,9 @@ Keep the wrapper small:
 - Override `model` only for name formatting.
 - Override `ask()` only when the model requires a special prompt format or output cleanup.
 
-Observation: Since you're using `attrs`, `_model` is shown as `model` for class instantiation, but the `model` property will be actually `model`. Also notice that `fronzen` plays a good role here, since you can't change those values once instanciated.
+Observation: `attrs.frozen` keeps wrapper instances immutable after they are created.
 
-This is equilavent to write:
+This is equivalent to write:
 
 ```python
 class NewModel(GeneratesText):
@@ -79,12 +80,10 @@ class NewModel(GeneratesText):
 
 ## 3. Export The Class
 
-Add the class name to `__all__` in `arcadia/features/models/__init__.py`.
-
-Then re-export it from `arcadia/models.py`:
+Import the class in `arcadia/models/__init__.py` and add its name to `__all__`:
 
 ```python
-from arcadia.features.models import NewModel
+from arcadia.models.new_model import NewModel
 
 __all__ = [
     "NewModel",
@@ -100,7 +99,7 @@ Update the model table in:
 - `README.md`
 - `README.pt-BR.md`
 - `play.ipynb`
-- `rodar.ipynb`
+- `executar.ipynb`
 
 Include:
 
