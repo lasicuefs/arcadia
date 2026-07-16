@@ -1,8 +1,8 @@
 # TODO list
 
-- [ ] Translate to portuguese:
+- [x] Translate to portuguese:
     - [x] `rodar.ipynb`
-    - [ ] `README.pt-BR.md`
+    - [x] `README.pt-BR.md`
 - [x] Update `pyproject`
     - [x] Description
     - [x] Author

@@ -131,5 +131,7 @@ Do not version these artifacts in this repository:
 
 These artifacts depend on the prompt, model, and execution settings, not only on the code. They should live in a separate repository, preferably inside an Obsidian vault.
 
+Notice that the `s*` releases use data-based versioning. They are retained solely for historical purposes and are now deprecated.
+
 
 [^1]: https://poemanalysis.com/definition/arcadia/
