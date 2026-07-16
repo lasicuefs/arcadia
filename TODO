@@ -3,9 +3,9 @@
 - [ ] Translate to portuguese:
     - [ ] `rodar.ipynb`
     - [ ] `README.pt-BR.md`
-- [ ] Update `pyproject`
-    - [ ] Description
-    - [ ] Author
-    - [ ] Maintainer
+- [x] Update `pyproject`
+    - [x] Description
+    - [x] Author
+    - [x] Maintainer
 - [x] Properly document the API for future maintainance
 - [x] Document the steps to include new models

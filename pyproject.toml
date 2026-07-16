@@ -1,9 +1,16 @@
 [project]
 name = "lasic-arcadia"
-version = "1.0.0"
-description = "Intuitive library to test LLMs"
+version = "2.1.1"
+description = "Notebook and library for quickly testing Portuguese-friendly LLMs on Google Colab and Kaggle."
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name = "RickBarretto", email = "78623871+RickBarretto@users.noreply.github.com" },
+]
+maintainers = [
+    { name = "Intelligent and Cognitive Systems Lab, UEFS" },
+    { name = "RickBarretto", email = "78623871+RickBarretto@users.noreply.github.com" },
+]
 dependencies = [
     "attrs>=25.4.0",
     "transformers>=5.0.0",
