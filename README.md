@@ -1,12 +1,31 @@
-# Arcadia
+<p align="right">
+<a href="README.pt-BR.md">Leia em português</a>
+</p>
 
-> Idealized, unspoiled natural landscape. [^1]
+<div align="center">
 
-This repository exists to install and run AI models quickly, mainly in Google Colab.
+# ✦ Arcadia ✦
 
-It versions only the execution code, notebook, and documentation for the runtime workflow. Prompts, templates, and model-generated outputs should not be versioned here.
+**A research API for language model experimentation at LASIC**
 
-## How To Use
+`LLMs` · `Poetry Generation` · `Prompt Evaluation` · `Research Playground`
+</div>
+
+<p align="center">
+🙡 ———————————————————————— 🙡
+</p>
+
+## 🌿 Overview 🌿
+
+**Arcadia** is a minimal wrapper for loading PT-BR friendly language models without repeatedly typing model names, package versions, and runtime setup details by hand.
+
+This repository exists to install and run AI models quickly, mainly — but not limited to — in Google Colab, Kaggle or local.
+
+The name points to Arcadia as an imagined landscape of harmony, nature, and reflection. For this research playground, it suggests a space for language, experimentation, and creative exploration with LLMs.
+
+<p align="center">🙡 ✦ 🙡</p>
+
+## 🧭 How To Use 🧭
 
 Open [`play.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
 
@@ -23,20 +42,9 @@ GIT_REF = "main"  # branch or tag
 !pip install -U /content/llm-playground
 ```
 
-## Where To Save Outputs
+<p align="center">🙡 ✦ 🙡</p>
 
-Use a directory outside this repository for prompts, templates, responses, poems, evaluations, and other generated documents. Ideally, save your outputs to a separate repository inside an Obsidian vault.
-
-Example in Colab:
-
-```python
-from pathlib import Path
-
-OUTPUT_DIR = Path("/content/outputs")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-```
-
-## Minimal Run
+## 🪶 Minimal Run 🪶
 
 ```python
 from pathlib import Path
@@ -53,7 +61,9 @@ with model as m:
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
 
-## Chat
+<p align="center">🙡 ✦ 🙡</p>
+
+## 📜 Chat 📜
 
 ```python
 from arcadia import models
@@ -71,29 +81,40 @@ with model as m:
     print(history.last.ai)
 ```
 
-For an interactive chat, use `sair`, `exit`, or `quit` to finish.
+For an interactive chat, use `exit`, or `quit` to finish.
 
-## API Reference
+<p align="center">🙡 ✦ 🙡</p>
+
+## 📦 Output Artifacts 📦
+
+Use a directory outside this repository for prompts, templates, responses, poems, evaluations, and other generated documents.
+
+Example in Colab:
+
+```python
+from pathlib import Path
+
+OUTPUT_DIR = Path("/content/outputs")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+```
+
+Do not version these artifacts in this repository:
+
+- prompts and prompt templates;
+- generated poems;
+- raw model responses;
+- evaluations produced by judge models;
+- documents derived from model outputs.
+
+Notice that the `s*` releases use data-based versioning. They are retained solely for historical purposes and are now deprecated.
+
+<p align="center">🙡 ✦ 🙡</p>
+
+## 🔌 API 🔌
 
 See [docs/API.md](docs/API.md) for the public model API, lifecycle rules, output objects, and chat history behavior.
 
 To add another model wrapper, follow [docs/ADDING_MODELS.md](docs/ADDING_MODELS.md).
-
-## Prompts And Templates
-
-Prompts and templates should live outside this repository, next to the generated outputs they produce.
-
-The preferred layout is a separate repository inside an Obsidian vault. Keep the prompt, generated response, evaluation, and derived documents together there so their history follows the experiment instead of the runtime code.
-
-## LASIC's Arcadia
-
-`arcadia` is a minimal wrapper for loading a few PT-BR friendly models without repeatedly typing model names and package versions by hand.
-
-```python
-from arcadia import models
-
-model = models.AmadeusVerbo("3B")
-```
 
 `ask()` returns the model response as normalized UTF-8 text:
 
@@ -113,25 +134,11 @@ with model as m:
     print(history.last.ai)
 ```
 
-## Versioning
+<div align="center">
 
-This repository versions only the execution environment:
+**Arcadia**<br>
+*A poetic gateway for exploring language models within LASIC.*
 
-- the `arcadia` package code;
-- the execution notebook;
-- documentation for the execution workflow.
+</div>
 
-Do not version these artifacts in this repository:
-
-- prompts and prompt templates;
-- generated poems;
-- raw model responses;
-- evaluations produced by judge models;
-- documents derived from model outputs.
-
-These artifacts depend on the prompt, model, and execution settings, not only on the code. They should live in a separate repository, preferably inside an Obsidian vault.
-
-Notice that the `s*` releases use data-based versioning. They are retained solely for historical purposes and are now deprecated.
-
-
-[^1]: https://poemanalysis.com/definition/arcadia/
+<p align="center">🙡 ✦ 🙡</p>
