@@ -9,3 +9,8 @@
     - [x] Maintainer
 - [x] Properly document the API for future maintainance
 - [x] Document the steps to include new models
+- [ ] Refactor internal code
+    - [ ] Remove `features` and `shared` folders
+    - [ ] Store models in separate files
+- [ ] Update README to match the Arcadia release style of writting
+- [ ] Add guide to non-technical people
