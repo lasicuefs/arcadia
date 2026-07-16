@@ -15,7 +15,7 @@
 🙡 ———————————————————————— 🙡
 </p>
 
-## 🌿 Visão Geral 🌿
+## Visão Geral
 
 **Arcadia** é um wrapper mínimo para carregar modelos de linguagem amigáveis a PT-BR sem precisar digitar repetidamente nomes de modelos, versões de pacotes e detalhes de configuração do runtime.
 
@@ -26,7 +26,7 @@ Este repositório existe para instalar e executar modelos de IA rapidamente, pri
 
 <p align="center">🙡 ✦ 🙡</p>
 
-<h2 align="center">Como Usar</h2>
+## Como Usar
 
 Abra [`executar.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
 
@@ -45,7 +45,7 @@ GIT_REF = "main"  # branch ou tag
 
 
 
-<h2 align="center">Execução Mínima</h2>
+## Execução Mínima
 
 ```python
 from pathlib import Path
@@ -64,7 +64,7 @@ with model as m:
 
 
 
-<h2 align="center">Chat</h2>
+## Chat
 
 ```python
 from arcadia import models
@@ -86,7 +86,7 @@ Para um chat interativo, use `sair` para finalizar.
 
 
 
-<h2 align="center">Artefatos De Saída</h2>
+## Artefatos De Saída
 
 Use um diretório fora deste repositório para prompts, modelos de prompt, respostas, poemas, avaliações e outros documentos gerados.
 
@@ -111,7 +111,7 @@ Observe que as releases `s*` utilizam versionamento baseado em dados. Elas são 
 
 
 
-<h2 align="center">API</h2>
+## API
 
 Consulte [docs/API.md](docs/API.md) para a API pública dos modelos, as regras de ciclo de vida, os objetos de saída e o comportamento do histórico de chat.
 

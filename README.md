@@ -15,7 +15,7 @@
 🙡 ———————————————————————— 🙡
 </p>
 
-## 🌿 Overview 🌿
+## Overview
 
 **Arcadia** is a minimal wrapper for loading PT-BR friendly language models without repeatedly typing model names, package versions, and runtime setup details by hand.
 
@@ -25,7 +25,7 @@ The name points to Arcadia as an imagined landscape of harmony, nature, and refl
 
 
 
-<h2 align="center">How To Use</h2>
+## How To Use
 
 Open [`play.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
 
@@ -44,7 +44,7 @@ GIT_REF = "main"  # branch or tag
 
 
 
-<h2 align="center">Minimal Run</h2>
+## Minimal Run
 
 ```python
 from pathlib import Path
@@ -63,7 +63,7 @@ with model as m:
 
 
 
-<h2 align="center">Chat</h2>
+## Chat
 
 ```python
 from arcadia import models
@@ -85,7 +85,7 @@ For an interactive chat, use `exit`, or `quit` to finish.
 
 
 
-<h2 align="center">Output Artifacts</h2>
+## Output Artifacts
 
 Use a directory outside this repository for prompts, templates, responses, poems, evaluations, and other generated documents.
 
@@ -110,7 +110,7 @@ Notice that the `s*` releases use data-based versioning. They are retained solel
 
 
 
-<h2 align="center">API</h2>
+## API
 
 See [docs/API.md](docs/API.md) for the public model API, lifecycle rules, output objects, and chat history behavior.
 
