@@ -12,5 +12,5 @@
 - [ ] Refactor internal code
     - [ ] Remove `features` and `shared` folders
     - [ ] Store models in separate files
-- [ ] Update README to match the Arcadia release style of writting
+- [x] Update README to match the Arcadia release style of writting
 - [ ] Add guide to non-technical people
