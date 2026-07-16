@@ -5,7 +5,7 @@ import unicodedata
 import attrs
 from transformers import Pipeline
 
-from arcadia.shared.models.base import Model
+from arcadia.models.api._model import Model
 
 
 def normalize(response: str) -> str:
@@ -62,15 +62,15 @@ class ChatTurn(str):
 
     def __repr__(self) -> str:
         return str(self)
-    
+
     @property
     def llm(self) -> str:
         return self.ai
-    
+
     @property
     def assistant(self) -> str:
         return self.ai
-    
+
     @property
     def system(self) -> str:
         return self.ai
@@ -78,7 +78,7 @@ class ChatTurn(str):
     @property
     def human(self) -> str:
         return self.user
-    
+
     @property
     def me(self) -> str:
         return self.user
