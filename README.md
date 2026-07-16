@@ -24,7 +24,6 @@ This repository exists to install and run AI models quickly, mainly — but not 
 The name points to Arcadia as an imagined landscape of harmony, nature, and reflection. For this research playground, it suggests a space for language, experimentation, and creative exploration with LLMs.
 
 
-
 ## How To Use
 
 Open [`play.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
@@ -43,7 +42,6 @@ GIT_REF = "main"  # branch or tag
 ```
 
 
-
 ## Minimal Run
 
 ```python
@@ -60,7 +58,6 @@ with model as m:
     print(output)
     (OUTPUT_DIR / "ask.txt").write_text(output, encoding="utf-8")
 ```
-
 
 
 ## Chat
@@ -82,7 +79,6 @@ with model as m:
 ```
 
 For an interactive chat, use `exit`, or `quit` to finish.
-
 
 
 ## Output Artifacts
@@ -107,7 +103,6 @@ Do not version these artifacts in this repository:
 - documents derived from model outputs.
 
 Notice that the `s*` releases use data-based versioning. They are retained solely for historical purposes and are now deprecated.
-
 
 
 ## API
