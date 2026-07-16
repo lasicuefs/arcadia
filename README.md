@@ -25,7 +25,7 @@ GIT_REF = "main"  # branch or tag
 
 ## Where To Save Outputs
 
-Use a directory outside this repository for prompts, templates, responses, poems, evaluations, and other generated documents. Ideally, point `OUTPUT_DIR` to a separate repository inside an Obsidian vault.
+Use a directory outside this repository for prompts, templates, responses, poems, evaluations, and other generated documents. Ideally, save your outputs to a separate repository inside an Obsidian vault.
 
 Example in Colab:
 
