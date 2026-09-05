@@ -15,10 +15,6 @@
 ———————————————— 🙡 ————————————————
 </p>
 
-<p align="right">
-<a href="./GUIDE.md">Not a programmer? This guide is for you ↗</a>
-</p>
-
 ## Overview
 
 **Arcadia** is a minimal wrapper for loading PT-BR friendly language models without repeatedly typing model names, package versions, and runtime setup details by hand.
@@ -32,6 +28,9 @@ The name points to Arcadia as an imagined landscape of harmony, nature, and refl
 > [!TIP]
 > If you're a non-technical user and want to use this library, we recommend [starting with our guide](./GUIDE.md). It explains the core concepts and walks you through everything you need to get started, without requiring a background in software development.
 
+<p align="right">
+<a href="./GUIDE.md">Not a programmer? This guide is for you ↗</a>
+</p>
 
 ## How To Use
 
