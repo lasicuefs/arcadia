@@ -135,6 +135,7 @@ with model as m:
 ```
 
 <div align="center">
+<br/>
 
 **Arcadia**<br>
 *A poetic gateway for exploring language models within LASIC.*
