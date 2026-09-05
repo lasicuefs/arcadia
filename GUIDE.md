@@ -349,9 +349,10 @@ As you become more familiar with Arcadia, you can explore advanced features and 
 
 
 <div align="center">
+<br/>
 
 **Arcadia**<br>
-*Um portal poético para explorar modelos de linguagem dentro do LASIC.*
+*A poetic gateway for exploring language models within LASIC.*
 
 </div>
 

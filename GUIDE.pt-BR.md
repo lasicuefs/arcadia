@@ -347,6 +347,7 @@ Agora que o Arcadia está em execução, você pode:
 
 
 <div align="center">
+<br/>
 
 **Arcadia**<br>
 *Um portal poético para explorar modelos de linguagem dentro do LASIC.*
