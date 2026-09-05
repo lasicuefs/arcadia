@@ -1,5 +1,7 @@
 <p align="right">
 <a href="README.pt-BR.md">Leia em português</a>
+<br/>
+<a href="./GUIDE.md">Not a programmer? This guide is for you →</a>
 </p>
 
 <div align="center">
