@@ -26,19 +26,19 @@ Este repositório existe para instalar e executar modelos de IA rapidamente, pri
 
 ## Como Usar
 
-Abra [`executar.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
+Abra [`executar.ipynb`](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
 
 Para testar uma branch ou tag específica:
 
 ```python
 GIT_REF = "main"  # branch ou tag
 
-!rm -rf /content/llm-playground
-!git clone https://github.com/RickBarretto/llm-playground /content/llm-playground
-%cd /content/llm-playground
+!rm -rf /content/arcadia
+!git clone https://github.com/lasicuefs/arcadia /content/arcadia
+%cd /content/arcadia
 !git fetch --all --tags
 !git checkout $GIT_REF
-!pip install -U /content/llm-playground
+!pip install -U /content/arcadia
 ```
 
 

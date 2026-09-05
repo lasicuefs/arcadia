@@ -26,19 +26,19 @@ The name points to Arcadia as an imagined landscape of harmony, nature, and refl
 
 ## How To Use
 
-Open [`play.ipynb`](https://colab.research.google.com/github/RickBarretto/llm-playground/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
+Open [`play.ipynb`](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
 
 To test a specific branch or tag:
 
 ```python
 GIT_REF = "main"  # branch or tag
 
-!rm -rf /content/llm-playground
-!git clone https://github.com/RickBarretto/llm-playground /content/llm-playground
-%cd /content/llm-playground
+!rm -rf /content/arcadia
+!git clone https://github.com/lasicuefs/arcadia /content/arcadia
+%cd /content/arcadia
 !git fetch --all --tags
 !git checkout $GIT_REF
-!pip install -U /content/llm-playground
+!pip install -U /content/arcadia
 ```
 
 
