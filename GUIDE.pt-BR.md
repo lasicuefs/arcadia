@@ -73,7 +73,7 @@ Um notebook é um documento que contém explicações e trechos de código que p
 
 Abra o notebook do Arcadia:
 
-**https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/play.ipynb**
+**https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/play.pt-BR.ipynb**
 
 Você verá algo semelhante a isto:
 
