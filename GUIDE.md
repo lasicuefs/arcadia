@@ -1,5 +1,5 @@
 <p align="right">
-<a href="./GUIA.md">Leia em português</a>
+<a href="./GUIDE.pt-BR">Leia em português</a>
 </p>
 
 <div align="center">

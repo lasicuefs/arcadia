@@ -26,7 +26,7 @@ Este repositório existe para instalar e executar modelos de IA rapidamente, pri
 ---
 
 > [!TIP]
-> Se você é um usuário não técnico e deseja utilizar esta biblioteca, recomendamos que [comece pelo nosso guia](./GUIA.md). Nele, explicamos os conceitos fundamentais e mostramos, passo a passo, tudo o que você precisa para começar, sem exigir conhecimentos em desenvolvimento de software.
+> Se você é um usuário não técnico e deseja utilizar esta biblioteca, recomendamos que [comece pelo nosso guia](./GUIDE.pt-BR.md). Nele, explicamos os conceitos fundamentais e mostramos, passo a passo, tudo o que você precisa para começar, sem exigir conhecimentos em desenvolvimento de software.
 
 
 ## Como Usar
