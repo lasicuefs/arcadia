@@ -1,6 +1,4 @@
 <p align="right">
-<a href="./GUIDE.pt-BR.md">Não sabe programar? Este guia é para você ↗</a>
-<br/>
 <a href="README.md">Read in English ↗</a>
 </p>
 
@@ -15,6 +13,10 @@
 
 <p align="center">
 ———————————————— 🙡 ————————————————
+</p>
+
+<p align="right">
+<a href="./GUIDE.pt-BR.md">Não sabe programar? Este guia é para você ↗</a>
 </p>
 
 ## Visão Geral

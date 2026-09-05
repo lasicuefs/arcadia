@@ -1,6 +1,4 @@
 <p align="right">
-<a href="./GUIDE.md">Not a programmer? This guide is for you ↗</a>
-<br/>
 <a href="README.pt-BR.md">Leia em português ↗</a>
 </p>
 
@@ -15,6 +13,10 @@
 
 <p align="center">
 ———————————————— 🙡 ————————————————
+</p>
+
+<p align="right">
+<a href="./GUIDE.md">Not a programmer? This guide is for you ↗</a>
 </p>
 
 ## Overview
