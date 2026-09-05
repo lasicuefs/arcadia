@@ -13,4 +13,4 @@
     - [x] Remove `features` and `shared` folders
     - [x] Store models in separate files
 - [x] Update README to match the Arcadia release style of writting
-- [ ] Add guide to non-technical people
+- [x] Add guide to non-technical people
