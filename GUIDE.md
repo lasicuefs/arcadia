@@ -346,3 +346,13 @@ As you become more familiar with Arcadia, you can explore advanced features and 
 
 **GPU**
 : A specialized processor that makes AI models run much faster than a regular CPU.
+
+
+<div align="center">
+
+**Arcadia**<br>
+*Um portal poético para explorar modelos de linguagem dentro do LASIC.*
+
+</div>
+
+<p align="center">🙡 ✦ 🙡</p>

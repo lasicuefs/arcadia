@@ -344,3 +344,13 @@ Agora que o Arcadia está em execução, você pode:
 
 **GPU**
 : Um processador especializado que permite executar modelos de IA muito mais rapidamente do que uma CPU convencional.
+
+
+<div align="center">
+
+**Arcadia**<br>
+*Um portal poético para explorar modelos de linguagem dentro do LASIC.*
+
+</div>
+
+<p align="center">🙡 ✦ 🙡</p>
