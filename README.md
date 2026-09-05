@@ -23,6 +23,11 @@ This repository exists to install and run AI models quickly, mainly — but not 
 
 The name points to Arcadia as an imagined landscape of harmony, nature, and reflection. For this research playground, it suggests a space for language, experimentation, and creative exploration with LLMs.
 
+---
+
+> [!TIP]
+> If you're a non-technical user and want to use this library, we recommend [starting with our guide](./GUIDE.md). It explains the core concepts and walks you through everything you need to get started, without requiring a background in software development.
+
 
 ## How To Use
 
