@@ -1,6 +1,18 @@
-# Arcadia for Everyone
+<p align="right">
+<a href="./GUIA.md">Leia em português</a>
+</p>
+
+<div align="center">
+
+# ✦ Arcadia for Everyone ✦
 
 > This guide is for anyone who wants to use Arcadia without programming or machine learning experience.
+
+</div>
+
+<p align="center">
+———————————————— 🙡 ————————————————
+</p>
 
 ## Before you begin
 

@@ -1,6 +1,18 @@
-# Arcadia para Todos
+<p align="right">
+<a href="./GUIDE.md">Read in English</a>
+</p>
+
+<div align="center">
+
+# ✦ Arcadia para Todos ✦
 
 > Este guia é destinado a qualquer pessoa que queira usar o Arcadia sem experiência em programação ou aprendizado de máquina.
+
+</div>
+
+<p align="center">
+———————————————— 🙡 ————————————————
+</p>
 
 ## Antes de começar
 
