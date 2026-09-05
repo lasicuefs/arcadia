@@ -31,7 +31,9 @@ The name points to Arcadia as an imagined landscape of harmony, nature, and refl
 
 ## How To Use
 
-Open [`play.ipynb`](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/play.ipynb) in Colab and enable a GPU runtime with `Runtime` -> `Change runtime type` -> `T4 GPU` or better.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/play.ipynb)
+
+Enable a GPU runtime with `Runtime` → `Change runtime type` → `T4 GPU` or better.
 
 To test a specific branch or tag:
 

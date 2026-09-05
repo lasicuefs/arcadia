@@ -31,7 +31,9 @@ Este repositório existe para instalar e executar modelos de IA rapidamente, pri
 
 ## Como Usar
 
-Abra [`executar.ipynb`](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/executar.ipynb) no Colab e habilite um runtime com GPU em `Runtime` -> `Change runtime type` -> `T4 GPU` ou melhor.
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/rodar.ipynb)
+
+Habilite um runtime com GPU em `Runtime` → `Change runtime type` → `T4 GPU` ou melhor.
 
 Para testar uma branch ou tag específica:
 
