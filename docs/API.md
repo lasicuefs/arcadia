@@ -14,7 +14,7 @@ Each model class is an immutable configuration object. Instantiate it with an op
 
 | Class | Default size | Available sizes |
 | --- | --- | --- |
-| `models.AmadeusVerbo` | `7B` | `0.5B`, `1.5B`, `3B`, `7B`, `14B`, `32B`, `72B` |
+| `models.AmadeusVerbo` | `3B` | `0.5B`, `1.5B`, `3B`, `7B`, `14B`, `32B`, `72B` |
 | `models.Gaia` | `4B` | `4B` |
 | `models.Tucano` | `2.4B` | `1.1B`, `2.4B` |
 | `models.TeenyTinyLlama` | `460m` | `460m` |
