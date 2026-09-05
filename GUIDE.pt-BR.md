@@ -1,5 +1,6 @@
 <p align="right">
 <a href="./GUIDE.md">Read in English</a>
+<a href="#glossário">Glossário</a>
 </p>
 
 <div align="center">
