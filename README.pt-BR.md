@@ -1,7 +1,7 @@
 <p align="right">
-<a href="./GUIDE.pt-BR.md">Não sabe programar? Este guia é para você →</a>
+<a href="./GUIDE.pt-BR.md">Não sabe programar? Este guia é para você ↗</a>
 <br/>
-<a href="README.md">Read in English</a>
+<a href="README.md">Read in English ↗</a>
 </p>
 
 <div align="center">
