@@ -31,7 +31,7 @@ Este repositório existe para instalar e executar modelos de IA rapidamente, pri
 
 ## Como Usar
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/rodar.ipynb)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lasicuefs/arcadia/blob/main/plau.pt-BR.ipynb)
 
 Habilite um runtime com GPU em `Runtime` → `Change runtime type` → `T4 GPU` ou melhor.
 
